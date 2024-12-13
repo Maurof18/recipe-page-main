@@ -1,0 +1,136 @@
+.attribution { font-size: 11px; text-align: center; margin: 1.6rem 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html {   
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px */
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf); 
+
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) ;
+}
+
+body{
+    background-color: var(--Stone-100);
+}
+.container{
+    padding: 3.5rem;
+}
+
+.main{
+    background-color: var(--White);
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Outfit';
+    color: var(--Stone-600);
+    font-size: 1.4rem;
+
+}
+.image img{
+    width: 100%;
+}
+.title, .name-section {
+    font-family: 'Young Serif';
+    font-weight: bold ;
+}
+.title{
+    color: var(--Stone-900);
+    font-size: 2.8rem;
+    margin: 0;
+}
+.name-section, .kcal, .ingredients ul li::marker, .instructions ol li::marker{
+    color: var(--Brown-800);
+
+}
+.instructions ol li, .ingredients ul li, .preparation ul li{
+    padding-left: 1.5rem; 
+  }
+.instructions ol li::marker{
+    font-weight: 700;
+}
+
+.preparation{
+    background-color: var(--Rose-50);
+    padding: 0.6rem 1.3rem;
+}
+.preparation-title, .preparation ul li::marker{
+    color: var(--Rose-800);
+}
+
+.highlighted{
+    font-weight: 700;
+}
+ul, ol{
+    padding: 0 1.6rem;
+
+}
+.name-section{
+    font-size: 2.7rem;
+   margin-top: 0;
+}
+/**----------------------- */
+
+.table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 2rem 0;
+  }
+
+.ingredients, .instructions, .nutritions{
+    padding: 2rem;
+
+}
+.table tr, .ingredients, .instructions {
+    border-bottom: 1px solid var(--Stone-100); 
+ }
+  
+.table td, .table th {
+    padding: 1rem 1.5rem; 
+    text-align: left;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+  
+@media (min-width: 768px) {
+    .title{
+        font-size: 5rem;
+    }
+    .name-section{
+        font-size: 4rem;
+    }
+    .main{
+        font-size: 1.7rem;
+    }
+    .image{
+        padding: 3.5rem ;
+    }
+    .container{
+        padding: 0 3.5rem 3.5rem 3.5rem;
+    }
+    .main, .image img{
+        border-radius: 3rem;
+        
+    }
+    
+}
